@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<style>
+    /* Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+/* Hero Section */
+.hero {
+    background: #000;
+    color: white;
+    padding: 80px 20px;
+}
+
+.hero span {
+    color: #ff5733;
+}
+
+/* Button */
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Projects */
+.projects {
+    padding: 50px 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact */
+.contact {
+    background: #f4f4f4;
+    padding: 50px 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 10px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    input, textarea {
+        font-size: 16px;
+    }
+}
+
+</style>
+<body>
+
+    <!-- Header -->
+    <header class="hero">
+        <h1>Hi, I'm <span>Your Name</span></h1>
+        <p>A creative web developer passionate about UX/UI.</p>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="project-image1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Short description of your work.</p>
+            </div>
+            <div class="project">
+                <img src="project-image2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Short description of your work.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Get In Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+<script>
+    const darkModeToggle = document.getElementById("darkModeToggle");
+
+darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
+
+/* Dark Mode Styles */
+document.body.classList.add("dark-mode", {
+    background: "#222",
+    color: "#fff"
+});
+</script>
+
+
+</body>
+</html>

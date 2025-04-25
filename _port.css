@@ -1,0 +1,156 @@
+.testimony{
+    margin-bottom: 10rem ;
+    .header--text{
+        max-width: 80rem;
+        margin: 0 auto;
+        text-align: center;
+        padding: 8rem 2rem;
+    }
+    .header--text h3{
+        font-size: 2.4rem;
+        font-weight: 400;
+        font-family: amatic sc,arial,helvetica, sans-serif;
+        color: #000;
+        line-height: 1.7;
+    }
+    .header--text h2{
+        font-size: 3.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 1.2;
+    }
+    .header--text p{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+    .testimony--user{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10rem;
+    }
+    .testimony--user .user_box{
+        width: 20rem;
+        height: 350px;
+        margin: 2rem;
+        display: inline-block;
+        border: 1px solid #9de296;
+        text-align: center;
+        padding: 2rem;
+        transition: all .4s;
+
+    }
+    .testimony--user .user_box:hover{
+        box-shadow: 0 6px 12px rgba(202,202,202,0.2);
+        background: #000;
+    }
+    .testimony--user .user_box img{
+        width: 10rem;
+        border-radius: 50%;
+        background: 8px solid #f1f1f1;
+    }
+    .testimony--user .user_box p{
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 2rem;
+        color: #777;
+    }
+    .testimony--user .user_box .text--box h4{
+        font-size: 1.5rem;
+        font-weight: 70;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 0.5s;
+    }
+    .testimony--user .user_box .text--box h5{
+        font-size: 1rem;
+        font-weight: 40;
+        text-transform: capitalize;
+    }
+    .testimony--user .user_box .text--box h5 span{
+        font-size: 1.2rem;
+        font-family: amatic sc, Arial, Helvetica, sans-serif;
+        font-weight: 70;
+        text-decoration: underline;
+        color: #9de296;
+    }
+}
+@media only screen and (max-width:1000px) {
+    .header--text h3{
+        font-size: 2.4rem;
+        font-weight: 400;
+        font-family: amatic sc,arial,helvetica, sans-serif;
+        color: #000;
+        line-height: 1.7;
+    }
+    .header--text h2{
+        font-size: 3.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 1.2;
+    }
+    .header--text p{
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+}
+@media only screen and (max-width:767px) {
+    .testimony .header--text h3{
+        font-size: 2rem;
+    }
+    .testimony .header--text h2{
+        font-size: 2.4rem;
+    }
+    .testimony .header--text p{
+        font-size: 1.2rem;
+    }
+}
+
+<section class="testimony">
+<div class="header--text">
+   <h4>My Testimony</h4>
+</div>
+<div class="testimony--user">
+   <div class="user_box">
+       <img src="profile1.png" alt="user photo">
+       <div class="text-box">
+           <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+               Magni a expedita, voluptate earum excepturi harum 
+               voluptas corrupti rerum adipisci necessitatibus!
+           </p>
+           <h4>dear adams</h4>
+           <h5>system analyst at <span>masCots</span> </h5>
+       </div>
+   </div>
+
+   <div class="user_box">
+       <img src="profile1.png" alt="user photo">
+       <div class="text-box">
+           <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+               Magni a expedita, voluptate earum excepturi harum 
+               voluptas corrupti rerum adipisci necessitatibus!
+           </p>
+           <h4>dear adams</h4>
+           <h5>system analyst at <span>masCots</span> </h5>
+       </div>
+   </div>
+
+   <div class="user_box">
+       <img src="profile1.png" alt="user photo">
+       <div class="text-box">
+           <p>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+               Magni a expedita, voluptate earum excepturi harum 
+               voluptas corrupti rerum adipisci necessitatibus!
+           </p>
+           <h4>dear adams</h4>
+           <h5>system analyst at <span>masCots</span> </h5>
+       </div>
+   </div>
+</div>
+</section>

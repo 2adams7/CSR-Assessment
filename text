@@ -1,0 +1,91 @@
+                <h4>Lead Software Engineer at Google</h4>
+                <p>Nov2019-Present</p>
+                <p>As a Senior Software Engineer at Google, I Played a pivotal role in developing innovative solutions for Google's core search <br>
+                   algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and effeciency, <br>
+                   optimizing user experiences for millions of users worldwide.</p>
+
+                   .text{
+                     margin-right: 50px;
+                     padding: 80px;
+                     h1 {
+                     font-size: 50px;
+                   }
+                   
+                   h2 {
+                     font-size: 1.875em;
+                    }
+                    p{
+                     font-family: verdana;
+                     color: #777;
+                    }
+                  } img{
+                     float: right;
+                    }
+
+
+
+
+
+                    .skills {
+                      text-align: center;
+                      padding: 2px;/* Adjusted height to fit the viewport */
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                    }
+                    
+                    .gallery {
+                      display: grid;
+                      grid-template-columns: repeat(5, 1fr); /* 5 columns per row */
+                      gap: 5px; /* Increased space between cards */
+                      margin-top: 20px;
+                      row-gap: 50px;
+                      column-gap: 2px;
+                    }
+                    
+                    .card {
+                      width: 50%;
+                      aspect-ratio: 1 / 1; /* Perfect square */
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                      background-color: #f4f4f4;
+                      padding: 20px;
+                      margin: 20px;
+                      border: 2px solid black; /* Black border */
+                      border-radius: 8px;
+                      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+                      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                    }
+                    
+                    .card i {
+                      font-size: 40px;
+                      color: black;
+                    }
+                    
+                    .card h1 {
+                      font-size: 20px;
+                      text-align: center;
+                    }
+                    
+                    /* Hover effect */
+                    .card:hover {
+                        color: #f4f4f4;
+                        background-color: black;
+                      transform: scale(1.05);
+                      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+                    }
+                    
+                    /* Responsive adjustments */
+                    @media (max-width: 1024px) {
+                      .gallery {
+                        grid-template-columns: repeat(3, 1fr);
+                      }
+                    }
+                    
+                    @media (max-width: 768px) {
+                      .gallery {
+                        grid-template-columns: repeat(2, 1fr);
+                      }
+                    }
