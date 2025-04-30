@@ -129,8 +129,9 @@ opacity: 0.7;
 .text h1, .text h2 {
     font-size: 12px;
 }
-.img img {
+.img {
     max-width: 300px;
+    text-align: center;
 }
 .container{
     flex-direction: row;
@@ -303,8 +304,50 @@ opacity: 0.7;
           .text h1 span,
           .text h2 span,
           .span {
-              font-size: 85% !important;
+              font-size: 45% !important;
               font-weight: 500 !important;
+          }
+          .text br{
+            display: none;
+          }
+          .experience {
+            padding-bottom: 60px;
+          }
+        
+          .experience h1 {
+            font-size: 28px !important;
+            padding-top: 40px;
+            padding-bottom: 20px;
+          }
+        
+          .experience .testimonials-item {
+            padding: 15px;
+            margin: 20px auto;
+          }
+        
+          .experience .testimonials-item img {
+            max-width: 40px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+          }
+        
+          .experience .testimonials-item .name {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        
+          .experience .testimonials-item .job {
+            font-size: 10px;
+            margin-left: 0;
+            display: block;
+            margin-top: 4px;
+            display: none;
+          }
+        
+          .experience .testimonials-item p {
+            font-size: 12px;
+            line-height: 1.4;
+            margin-top: 10px;
           }
 }
 .text{
