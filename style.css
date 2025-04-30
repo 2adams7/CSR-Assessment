@@ -496,6 +496,9 @@ img {
   display: block;
   transition: 0.5s ease;
 }
+.about-page .about-image:hover img {
+  transform: scale(1.2);
+}
 .about-page .about-content {
   flex: 1;
 }
