@@ -344,6 +344,32 @@ nav svg {
     margin: 10px auto; /* center horizontally */
   }
 }
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .text {
   margin-right: 50px;
   padding: 80px;
@@ -681,6 +707,17 @@ nav svg {
 
 .card1:nth-child(3) {
   animation-delay: 2s;
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-page {
