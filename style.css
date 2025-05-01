@@ -90,6 +90,7 @@ nav svg {
   transition: all 0.5s;
   cursor: pointer;
   margin: 25px;
+  text-decoration: none;
 }
 
 .button.fa {

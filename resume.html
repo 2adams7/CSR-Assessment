@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #101820;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .countdown {
+      display: flex;
+      gap: 20px;
+      font-size: 2rem;
+    }
+    .countdown div {
+      text-align: center;
+    }
+    .countdown span {
+      display: block;
+      font-size: 1rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>We're Launching Soon!</h1>
+  <div class="countdown">
+    <div>
+      <div id="days">00</div>
+      <span>Days</span>
+    </div>
+    <div>
+      <div id="hours">00</div>
+      <span>Hours</span>
+    </div>
+    <div>
+      <div id="minutes">00</div>
+      <span>Minutes</span>
+    </div>
+    <div>
+      <div id="seconds">00</div>
+      <span>Seconds</span>
+    </div>
+  </div>
+
+  <script>
+    // Set your launch date here
+    const launchDate = new Date("2025-06-01T00:00:00").getTime();
+
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const timeLeft = launchDate - now;
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+    };
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+</body>
+</html>

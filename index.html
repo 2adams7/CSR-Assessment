@@ -37,10 +37,12 @@
                 <a href="projects.html">Projects </a>
                 <a href="contactme.html">Contact me</a>
             </div>
-            <button class="button">
-                Resume
-                <i class="fa fa-download"></i>
-                </button>
+            <label class="button">
+                 Resume
+                <i class="fa fa-Download"></i>
+                <input type="file" style="display: none;" />
+            </label>
+            
         </nav>
         <br><br><br>
         <div class="content">
@@ -398,7 +400,7 @@
         // Animate hero elements on load
         window.addEventListener('load', () => {
             document.querySelector('.text h1').style.animation = 'slideIn 2s forwards';
-            document.querySelector('.img').style.animation = 'slideIn 2s forwards';
+            //document.querySelector('.img').style.animation = 'slideIn 2s forwards';
             document.querySelector('.text h2').style.animation = 'slideIn 2s forwards';
             document.querySelector('.text p').style.animation = 'fadeInText 3s forwards';
             document.querySelector('.container').style.animation = 'slideIn 2s forwards';
