@@ -180,7 +180,7 @@ opacity: 0.7;
 
 
 .icon {
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
@@ -441,7 +441,7 @@ opacity: 0.7;
 .container {
     .empty{
         padding: 10px;
-
+        cursor:pointer;
     }  
 .empty:hover,.changes-color:hover
 {
@@ -882,6 +882,7 @@ opacity: 0.7;
             border: solid 2px black;
             border-radius: 5px;
             margin: 10px;
+            cursor:pointer;
           }
           .color:hover{
             color: #FFFFFF;
